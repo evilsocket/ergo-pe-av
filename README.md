@@ -23,11 +23,13 @@ The `dataset.csv` training file has been generated with:
 
     ergo encode ergo-pe-av /media/evilsocket/4TB/datapath-pe/classes --filter "*.exe"
 
-<img src="https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/history.png" width="100%"/>
-
 | Training | Validation | Testing |
 |----------|------------|---------|
 ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/training_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/validation_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/test_cm.png) |
+
+<center>
+<img src="https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/history.png"/>
+</center>
 
 ### License
 
