@@ -1,0 +1,48 @@
+Training --------------------------------------------
+              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.98     70007
+           1       0.99      0.96      0.97     69987
+
+   micro avg       0.98      0.98      0.98    139994
+   macro avg       0.98      0.98      0.98    139994
+weighted avg       0.98      0.98      0.98    139994
+
+
+confusion matrix:
+
+[[69654   353]
+ [ 3121 66866]]
+
+Validation ------------------------------------------
+              precision    recall  f1-score   support
+
+           0       0.95      0.99      0.97     14973
+           1       0.99      0.95      0.97     15025
+
+   micro avg       0.97      0.97      0.97     29998
+   macro avg       0.97      0.97      0.97     29998
+weighted avg       0.97      0.97      0.97     29998
+
+
+confusion matrix:
+
+[[14814   159]
+ [  784 14241]]
+
+Test ------------------------------------------------
+              precision    recall  f1-score   support
+
+           0       0.95      0.99      0.97     14996
+           1       0.99      0.95      0.97     15002
+
+   micro avg       0.97      0.97      0.97     29998
+   macro avg       0.97      0.97      0.97     29998
+weighted avg       0.97      0.97      0.97     29998
+
+
+confusion matrix:
+
+[[14797   199]
+ [  810 14192]]
+
