@@ -2,11 +2,12 @@ An artificial neural network and API to detect Windows malware, based on [Ergo](
 
 ## Installation
 
+    cd /path/to/ergo-pe-av
     sudo pip3 install -r requirements.txt
 
 ### Use as an API
 
-    ergo serve . --classes "clean, malware"
+    ergo serve /path/to/ergo-pe-av --classes "clean, malware"
 
 From the client:
 
