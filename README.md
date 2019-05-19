@@ -27,9 +27,9 @@ The `dataset.csv` training file has been generated with:
 |----------|------------|---------|
 ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/training_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/validation_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/test_cm.png) |
 
-<center>
-<img src="https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/history.png"/>
-</center>
+<p align="center">
+    <img src="https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/history.png"/>
+</p>
 
 ### License
 
