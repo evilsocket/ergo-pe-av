@@ -16,9 +16,9 @@ From the client:
 
 The dataset is made of ~200000 samples divided in two subfolders:
 
-    - `classes/pe-malicious` with 100000 malware samples from VirusTotal
-    - `classes/pe-clean` with 100000 clean samples
-    
+- `classes/pe-malicious` with 100000 malware samples from VirusTotal
+- `classes/pe-clean` with 100000 clean samples
+
 The `dataset.csv` training file has been generated with:
 
     ergo encode ergo-pe-av /media/evilsocket/4TB/datapath-pe/classes --filter "*.exe"
