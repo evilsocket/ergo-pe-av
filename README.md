@@ -12,6 +12,10 @@ From the client:
 
     curl "http://localhost:8080/?x=/path/to/file.exe"
 
+Or to upload the whole file:
+
+    curl -F "x=@/path/to/file.exe" "http://localhost:8080/"
+
 ### Model Statistics
 
 The dataset is made of ~200000 samples divided in two subfolders:

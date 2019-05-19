@@ -113,12 +113,16 @@ def encode_sections(pe):
 def encode_pe(filepath):
     log.debug("encoding %s ...", filepath)
 
-    with open(filepath, 'rb') as fp:
-        raw = fp.read()
-        sz = len(raw)
-
+    if hasattr(filepath, 'read'):
+        raw = filepath.read()
+        
+    else:
+        with open(filepath, 'rb') as fp:
+            raw = fp.read()
+    
+    sz       = len(raw)
     pe       = lief.PE.parse(list(raw)) 
-    ep_bytes  = [0] * 64
+    ep_bytes = [0] * 64
     try:
         ep_offset = pe.entrypoint - pe.optional_header.imagebase
         ep_bytes  = [int(b) for b in raw[ep_offset:ep_offset+64]]
