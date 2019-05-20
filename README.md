@@ -9,17 +9,23 @@ An artificial neural network and API to detect Windows malware, based on [Ergo](
 
     ergo serve /path/to/ergo-pe-av --classes "clean, malware"
 
-From the client:
+From the client, to scan a file that the server can access too:
 
     curl "http://localhost:8080/?x=/path/to/file.exe"
+    # or
+    curl --data "x=/path/to/file.exe" "http://localhost:8080/"
 
-Or to upload the whole file:
+To upload the whole file:
 
     curl -F "x=@/path/to/file.exe" "http://localhost:8080/"
 
-Or to scan a raw features vector:
+To encode a file to a vector of raw features:
+    
+    curl -F "x=@/path/to/file.exe" "http://localhost:8080/encode"
 
-    curl "http://localhost:8080/?x=x=0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.847058823529,......"
+To scan a vector of raw features:
+
+    curl --data "x=0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.847058823529,......" "http://localhost:8080/"
 
 ### Model Statistics
 
