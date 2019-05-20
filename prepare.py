@@ -4,6 +4,7 @@ import sys
 import logging as log
 import numpy as np
 import pandas as pd
+import werkzeug.datastructures
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -22,5 +23,15 @@ def prepare_dataset(filename):
     data = pd.read_csv(filename, sep = ',', header = None)
     return data.replace(encoder.classes)
 
-def prepare_input(filename, is_encoding = False):
-    return encoder.encode_pe(filename)
+def prepare_input(x, is_encoding = False):
+    # file upload
+    if isinstance(x, werkzeug.datastructures.FileStorage):
+        return encoder.encode_pe(x)
+    # file path
+    elif len(x) > 0 and x[0] == '/':
+        return encoder.encode_pe(x)
+    # raw vector
+    else:
+        return x.split(',')
+
+
