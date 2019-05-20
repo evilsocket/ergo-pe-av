@@ -28,7 +28,7 @@ def prepare_input(x, is_encoding = False):
     if isinstance(x, werkzeug.datastructures.FileStorage):
         return encoder.encode_pe(x)
     # file path
-    elif len(x) > 0 and x[0] == '/':
+    elif os.path.isfile(x) :
         return encoder.encode_pe(x)
     # raw vector
     else:
