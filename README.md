@@ -28,13 +28,13 @@ The `dataset.csv` training file has been generated with:
 
     ergo encode ergo-pe-av /media/evilsocket/4TB/datapath-pe/classes --filter "*.exe"
 
-| Training | Validation | Testing |
-|----------|------------|---------|
-![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/training_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/validation_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/test_cm.png) |
-
 | Training | ROC/AUC |
 |----------|---------|
 ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/history.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/roc.png) |
+
+| Training | Validation | Testing |
+|----------|------------|---------|
+![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/training_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/validation_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/test_cm.png) |
 
 ### License
 
