@@ -32,9 +32,9 @@ The `dataset.csv` training file has been generated with:
 |----------|------------|---------|
 ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/training_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/validation_cm.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/test_cm.png) |
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/history.png"/>
-</p>
+| Training | ROC/AUC |
+|----------|---------|
+![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/history.png) | ![](https://raw.githubusercontent.com/evilsocket/ergo-pe-av/master/roc.png) |
 
 ### License
 
