@@ -17,6 +17,10 @@ Or to upload the whole file:
 
     curl -F "x=@/path/to/file.exe" "http://localhost:8080/"
 
+Or to scan a raw features vector:
+
+    curl "http://localhost:8080/?x=x=0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.847058823529,......"
+
 ### Model Statistics
 
 The dataset is made of ~200000 samples divided in two subfolders:
