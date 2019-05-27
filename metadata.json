@@ -1,0 +1,4 @@
+{
+	"title": "PE Malware Scanner",
+	"description": "An artificial neural network and API to detect Windows malware, based on Ergo and LIEF."
+}

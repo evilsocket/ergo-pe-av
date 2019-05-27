@@ -1,2 +1,2 @@
-ergo
+ergo-ai
 lief
