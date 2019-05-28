@@ -2,9 +2,14 @@ import lief
 import numpy as np
 import logging as log
 
-classes = {
+classes_replace = {
     'pe-legit': 0,
     'pe-malicious': 1
+}
+
+classes = {
+    0: 'safe',
+    1: 'malicious'
 }
 
 properties = [ 'has_configuration',
